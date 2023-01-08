@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  background-image: url('https://makeenacademy.net/front/assets/img/bg/spikes3.png');
+  background-size: 20%;
+}
+
+.container {
+  padding: 2em;
+}
+
+.swal2-title {
+  font-size: 1.5em;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.error {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 5em;
+  }
+  .card:not(:nth-of-type(1)) {
+    margin-top: 4em;
+  }
+  .title {
+    padding: 1.5em 3em !important;
+  }
+  .reset {
+    top: 1em !important;
+    left: 1.5em !important;
+    font-size: 1em;
+  }
+  .info {
+    top: 1em !important;
+    right: 1.5em !important;
+    font-size: 1em;
+  }
+}

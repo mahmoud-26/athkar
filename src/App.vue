@@ -18,14 +18,14 @@
     <Card id="6" info="من صلى علي صلاة واحدة صلى الله عليه عشر صلوات وحطت عنه عشر خطيئات ورفعت له عشر درجات">
       اللهم صل وسلم وبارك على سيدنا محمد
     </Card>
-    <Card id="7" info="كنز من كنوز الجنة">
+    <Card id="7" info="تملآن ما بين السماوات والأرض">
+      سبحان الله والحمد لله
+    </Card>
+    <Card id="8" info="كنز من كنوز الجنة">
       لا حول ولا قوة إلا بالله
     </Card>
-    <Card id="8" info="كلمتان خفيفتان على اللسان ثقيلتان في الميزان حبيبتان إلى الرحمن">
+    <Card id="9" info="كلمتان خفيفتان على اللسان ثقيلتان في الميزان حبيبتان إلى الرحمن">
       سبحان الله وبحمده سبحان الله العظيم
-    </Card>
-    <Card id="9" info="تملآن ما بين السماوات والأرض">
-      سبحان الله والحمد لله
     </Card>
     <Card id="10" info="من قالها في يوم مئة مرة كانت له عدل عشر رقاب و كتبت له مئة حسنة و محيت عنه مئة سيئة و كانت له حرزًا من الشيطان يومه ذلك حتى يمسي و لم يأت أحد بأفضل مما جاء به الا رجل عمل أكثر منه">
       لا إله إلا الله وحده لا شريك له، له الملك و له الحمد وهو على كل شئ قدير
@@ -40,7 +40,15 @@
       الحمد لله حمدًا كثيرًا طيبًا مباركًا فيه
     </Card>
     <div class="error">
-      <a href="https://wa.me/+201030740274">الإبلاغ عن خطأ</a>
+      <a href="https://wa.me/+201030740274">
+        <i class="fi fi-brands-whatsapp"></i>
+      </a>
+      <a href="https://github.com/mahmoud-26">
+        <i class="fi fi-brands-github"></i>
+      </a>
+      <a href="mailto:mnaggar2006@gmail.com">
+        <i class="fi fi-rr-envelope"></i>
+      </a>
     </div>
   </div>
 </template>
@@ -52,3 +60,19 @@
     components: { Card }
   }
 </script>
+
+<style scoped>
+  .error {
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .error a {
+    font-size: 1.25em;
+    color: lightgray;
+    text-decoration: none;
+  }
+  .error a:active {
+    color: black;
+  }
+</style>

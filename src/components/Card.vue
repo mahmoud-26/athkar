@@ -85,7 +85,7 @@
     margin-top: 2em;
   }
   .title {
-    padding: 0 1em;
+    padding: 1em;
   }
   .reset {
     position: absolute;

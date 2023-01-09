@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 
 * {
   box-sizing: border-box;
   user-select: none;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -20,18 +22,8 @@ body {
 }
 
 .swal2-title {
-  font-size: 1.5em !important;
+  font-size: 1.5em;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
-}
-
-.error {
-  text-align: center;
-  padding-top: 1.5em;
-}
-
-a {
-  color: lightgray;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 900px) {

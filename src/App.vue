@@ -39,7 +39,7 @@
     <Card id="13" info="قال النبي ﷺ لقد رأيت اثني عشر ملكًا يبتدرونها أيهم يرفعها">
       الحمد لله حمدًا كثيرًا طيبًا مباركًا فيه
     </Card>
-    <div class="error">
+    <div class="contact">
       <a href="https://wa.me/+201030740274">
         <i class="fi fi-brands-whatsapp"></i>
       </a>
@@ -55,24 +55,67 @@
 
 <script>
   import Card from './components/Card.vue'
-  
+  import Swal from 'sweetalert2'
+
   export default {
-    components: { Card }
+    components: { Card },
+    data() {
+      return {
+        done: localStorage.getItem('done')
+      }
+    },
+    mounted() {
+      if (this.done === null || this.done === false) {
+        Swal.fire({
+          title: 'السلام عليكم 👋 مرحبًا بك في موقع أذكار المسلم',
+          confirmButtonText: 'التالي'
+        }).then(() => {
+          Swal.fire({
+            title: 'يحتوي الموقع على أذكار إسلامية ثوابها عظيم لقارئها والمواظب عليها',
+            confirmButtonText: 'التالي'
+          }).then(() => {
+            Swal.fire({
+              title: 'يمكنك الضغط على الذكر لإظهار بعض الأزرار',
+              confirmButtonText: 'التالي'
+            }).then(() => {
+              Swal.fire({
+                title: 'يقوم الزر الأيمن بإظهار معلومات عن الذكر',
+                confirmButtonText: 'التالي'
+              }).then(() => {
+                Swal.fire({
+                  title: 'يقوم الزر الأيسر بإعادة العد إلى الصفر',
+                  confirmButtonText: 'التالي'
+                }).then((result) => {
+                  Swal.fire({
+                    title: 'لا تنسى المداومة على الذكر حتى يوفقك الله ويرضى عنك 🌹',
+                    confirmButtonText: 'إنهاء'
+                  })
+                  if (result.isConfirmed) {
+                    localStorage.setItem('done', true)
+                    this.done = localStorage.getItem('done')
+                  }
+                })
+              })
+            })
+          })
+        })
+      }
+    }
   }
 </script>
 
 <style scoped>
-  .error {
+  .contact {
     padding-top: 2em;
     display: flex;
     justify-content: space-evenly;
   }
-  .error a {
+  .contact a {
     font-size: 1.25em;
     color: lightgray;
     text-decoration: none;
   }
-  .error a:active {
+  .contact a:active {
     color: black;
   }
 </style>

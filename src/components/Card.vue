@@ -66,7 +66,6 @@
       localStorage.removeItem('id-undefined')
     },
     unmounted() {
-      localStorage.removeItem(`id-${this.id}`)
       localStorage.removeItem('id-undefined')
     }
   }

@@ -39,6 +39,7 @@
     <Card id="13" info="قال النبي ﷺ لقد رأيت اثني عشر ملكًا يبتدرونها أيهم يرفعها">
       الحمد لله حمدًا كثيرًا طيبًا مباركًا فيه
     </Card>
+    <Total />
     <div class="contact">
       <a href="https://wa.me/+201030740274">
         <i class="fi fi-brands-whatsapp"></i>
@@ -55,10 +56,11 @@
 
 <script>
   import Card from './components/Card.vue'
+  import Total from './components/Total.vue'
   import Swal from 'sweetalert2'
 
   export default {
-    components: { Card },
+    components: { Card, Total },
     data() {
       return {
         done: localStorage.getItem('done')
